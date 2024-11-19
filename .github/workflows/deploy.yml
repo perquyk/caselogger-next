@@ -1,9 +1,11 @@
+# Update to match your values: branch_name, app_name, SSH key name on GitHub from previous step if changed, server ip, username, port, and server Node pathname (using 'which pm2' on server to get path)
+
 name: Deploy Next.js App
 
 on:
   push:
     branches:
-      - master # Change to your specific branch
+      - main # Change to your specific branch
       # - deployprod  # Additional branch for deployment
 
 jobs:
@@ -28,7 +30,7 @@ jobs:
 
       - name: Deploy to DigitalOcean
         env:
-          HOST: dev.perquyk.org
+          HOST: 10.0.2.3
           USERNAME: root
           TARGET_DIR: /var/www/caselogger-next
           APP_NAME: caselogger #should match the name of the server block
