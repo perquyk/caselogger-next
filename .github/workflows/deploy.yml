@@ -1,4 +1,4 @@
-# Update to match your values: branch_name, app_name, SSH key name on GitHub from previous step if changed, server ip, username, port, and server Node pathname (using 'which pm2' on server to get path)
+``  # Update to match your values: branch_name, app_name, SSH key name on GitHub from previous step if changed, server ip, username, port, and server Node pathname (using 'which pm2' on server to get path)
 
 name: Deploy Next.js App
 
@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy to DigitalOcean
         env:
-          HOST: 10.0.2.3
+          HOST: 213.118.209.124
           USERNAME: root
           TARGET_DIR: /var/www/caselogger-next
           APP_NAME: caselogger #should match the name of the server block
