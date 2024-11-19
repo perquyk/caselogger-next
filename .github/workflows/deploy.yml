@@ -30,7 +30,7 @@ jobs:
         env:
           HOST: 10.0.2.3
           USERNAME: root
-          TARGET_DIR: /var/www/folder_name
+          TARGET_DIR: /var/www/caselogger-next
           APP_NAME: caselogger #should match the name of the server block
           PORT: 3000
           #if multiple deploys are needed from different branches
