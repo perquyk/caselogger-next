@@ -28,7 +28,7 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Deploy to DigitalOcean
+      - name: Deploy to Server
         env:
           HOST: 213.118.209.124
           USERNAME: root
