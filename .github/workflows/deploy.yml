@@ -28,7 +28,7 @@ jobs:
 
       - name: Deploy to DigitalOcean
         env:
-          HOST: 10.0.2.3
+          HOST: dev.perquyk.org
           USERNAME: root
           TARGET_DIR: /var/www/caselogger-next
           APP_NAME: caselogger #should match the name of the server block
