@@ -1,9 +1,11 @@
 import React from 'react'
+import Home from "@/components/Home"
+import Header from "@/components/header/Header";
 
 function Page() {
     return (
         <>
-        <h1>Hello World!</h1>
+            <p> Home content Container </p>
         </>
     )
 }
