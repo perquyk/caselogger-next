@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    hr{
+        @apply border-slate-600/75 border
+    }
+    .content-header{
+        @apply text-3xl mb-2 flex justify-between items-end
+    }
+    h2 {
+        @apply text-2xl mb-2
+    }
+    h3 {
+        @apply text-xl mb-1.5
+    }
+    .subtitle{
+        @apply text-sm -mt-1 text-neutral-100/40
+    }
+    .content-div{
+        @apply justify-between
+    }
+    .content-div{
+        @apply bg-slate-700 max-w-7xl mx-auto mt-3 rounded-lg drop-shadow-lg shadow-xl p-4 text-neutral-100;
+    }
+
+}

@@ -1,12 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
 import '@/components/nav/Nav.css'
-import ChevronDown from "@/components/parts/icons/ChevronDown";
 import Image from "next/image";
+import ChevronDown from "@/components/parts/icons/ChevronDown";
+import Hamburger from "@/components/parts/icons/Hamburger"
 
 const Nav = () => {
-
-   const inHomeLinks = [
+    const inHomeLinks = [
        {name: "Install", loc: "/forms/inhome/install", enabled: true},
        {name: "Repair", loc: "/forms/inhome/repair", enabled: true},
        {name: "Project Unhappy Drop", loc: "/forms/inhome/proj-unhappy-drop", enabled: true},
@@ -16,8 +16,6 @@ const Nav = () => {
     ]
     const b2bLinks = [
         {name: "Corporate Fibernet", loc: "/forms/b2b/cfn", enabled: true},
-        {name: "IP-VPN", loc: "/forms/b2b/cfn", enabled: true},
-        {name: "SIP/ISDN", loc: "/forms/b2b/sip-isdn", enabled: true},
         {name: "PSV KA", loc: "/forms/b2b/PSV", enabled: true},
     ]
     const projLinks = [
@@ -26,7 +24,7 @@ const Nav = () => {
     ]
 
     function dropdownSelect(name, ar) {
-       const filteredAr = ar.filter((link, linkIndex) => {if(link.enabled){return true}})
+       const filteredAr = ar.filter((link) => {if(link.enabled){return true}})
         return(
             <>
             <div className="dropdown">
@@ -51,15 +49,18 @@ const Nav = () => {
                     <span>Caselogger</span>
                 </Link>
             </div>
-            <div className="nav-group">
-                <ul className="nav-item-group">
-                    {dropdownSelect("inHome", inHomeLinks)}
-                    {dropdownSelect("FTTH", ftthLinks)}
-                    {dropdownSelect("B2B", b2bLinks)}
-                    {dropdownSelect("B2B Projects", projLinks)}
-                    <li className="nav-item">Other Tools</li>
 
-                </ul>
+            <div>
+                <div className="nav-group">
+                    <div className="nav-item-group">
+                        {dropdownSelect("inHome", inHomeLinks)}
+                        {dropdownSelect("FTTH", ftthLinks)}
+                        {dropdownSelect("B2B", b2bLinks)}
+                        {dropdownSelect("B2B Projects", projLinks)}
+                        <button className="nav-item"><Link href="/page/extra">Other Tools</Link></button>
+
+                    </div>
+                </div>
             </div>
         </nav>
     )
