@@ -11,7 +11,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-primary">
       <Header/>
+
         {children}
+
       </body>
     </html>
   );
