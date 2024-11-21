@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import '@/components/nav/Nav.css'
 import ChevronDown from "@/components/parts/icons/ChevronDown";
+import Image from "next/image";
 
 const Nav = () => {
 
@@ -46,7 +47,7 @@ const Nav = () => {
         <nav className="navbar">
             <div className="nav-group">
                 <Link className="nav-brand" href="/">
-                    <img src='/Logo32.png' alt="logo"/>
+                    <Image src='/Logo32.png' alt="logo" width="32" height="32"/>
                     <span>Caselogger</span>
                 </Link>
             </div>
