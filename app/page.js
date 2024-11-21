@@ -2,6 +2,11 @@ import React from 'react'
 import './page.css'
 import Changelog from '@/components/changelog/Changelog'
 import Image from "next/image";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
+
 const Page = () => {
     return (
         <>
@@ -21,7 +26,13 @@ const Page = () => {
                     <hr/>
                     <Changelog />
                     <hr/>
-                    <p className="home-text">Bij problemen: stuur Kenny een Whatsappje 😊</p>
+                    <div className="contact-buttons">
+                        <h3 className="home-text">Bij problemen:</h3>
+                        <button className="whatsapp-button"> <Link href="https://wa.me/32471562237" target="_blank"><FaWhatsapp className="whatsapp-icon"/></Link> </button>
+                        <button className="mail-button"> <Link href="mailto:kenny.perquy@unit-t.eu" target="_blank"><CiMail className="mail-icon"/></Link></button>
+                        <button className="github-button"><Link href="https://github.com/perquyk/caselogger-next/issues/new" target="_blank"><FaGithub className="github-icon"/></Link></button>
+                    </div>
+
                 </div>
 
             </div>

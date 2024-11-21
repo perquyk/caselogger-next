@@ -31,5 +31,31 @@
     .home-text {
         @apply my-3
     }
+    .contact-buttons{
+        @apply flex
+    }
+
+    .whatsapp-icon{
+        color: #25d366;
+        @apply scale-150 ml-5
+    }
+    .whatsapp-icon:hover{
+        color: #128c7e;
+        @apply scale-125
+    }
+    .mail-icon{
+        color: white;
+        @apply scale-150 ml-5
+    }
+    .mail-icon:hover{
+        @apply text-neutral-400 scale-125
+    }
+    .github-icon{
+        @apply text-white scale-150 ml-5
+    }
+    .github-icon:hover{
+        @apply scale-125 text-neutral-400
+    }
+
 
 }
