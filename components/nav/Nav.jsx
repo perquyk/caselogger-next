@@ -45,10 +45,10 @@ const Nav = () => {
     return (
         <nav className="navbar">
             <div className="nav-group">
-                <a className="nav-brand" href="/">
+                <Link className="nav-brand" href="/">
                     <img src='/Logo32.png' alt="logo"/>
                     <span>Caselogger</span>
-                </a>
+                </Link>
             </div>
             <div className="nav-group">
                 <ul className="nav-item-group">
