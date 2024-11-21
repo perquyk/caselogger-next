@@ -1,11 +1,12 @@
 import React from 'react'
+import TestComponent from "@/components/TestComponent";
 
-function Page() {
+const Page = () => {
     return (
         <>
-            <p> Home content Container </p>
+        <TestComponent/>
         </>
     )
 }
-
 export default Page
+
