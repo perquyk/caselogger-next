@@ -9,6 +9,13 @@
     .content-header{
         @apply text-3xl mb-2 flex justify-between items-end
     }
+    .flex-title {
+        @apply flex items-center
+    }
+    .flex-title h1 {
+        @apply pl-3
+    }
+
     h2 {
         @apply text-2xl mb-2
     }
@@ -19,10 +26,10 @@
         @apply text-sm -mt-1 text-neutral-100/40
     }
     .content-div{
-        @apply justify-between
-    }
-    .content-div{
         @apply bg-slate-700 max-w-7xl mx-auto mt-3 rounded-lg drop-shadow-lg shadow-xl p-4 text-neutral-100;
+    }
+    .home-text {
+        @apply my-3
     }
 
 }
