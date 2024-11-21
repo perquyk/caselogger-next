@@ -3,7 +3,6 @@ import Link from 'next/link'
 import '@/components/nav/Nav.css'
 import Image from "next/image";
 import ChevronDown from "@/components/parts/icons/ChevronDown";
-import Hamburger from "@/components/parts/icons/Hamburger"
 
 const Nav = () => {
     const inHomeLinks = [

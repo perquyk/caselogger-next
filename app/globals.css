@@ -12,4 +12,10 @@
     .bg-tertiary {
         @apply bg-slate-900/90
     }
+        .content-header{
+            @apply text-3xl mb-2 flex justify-between items-end
+        }
+    .content-div{
+        @apply bg-slate-700 max-w-7xl mx-auto mt-3 rounded-lg drop-shadow-lg shadow-xl p-4 text-neutral-100;
+    }
 }

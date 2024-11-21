@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card-header{
+        @apply flex items-end justify-between gap-7
+    }
+    .card-version{
+        @apply text-neutral-300/50 text-sm
+    }
+    .card-frame{
+
+        @apply text-neutral-300 bg-slate-700 rounded-lg p-4 max-w-full
+
+    }
+    .by{
+        @apply pb-3
+    }
+    .card-wrapper{
+        @apply max-w-7xl grid grid-cols-3 gap-3
+    }
+    .cards {
+        @apply flex items-center justify-center mt-3
+    }
+    .card-action-div{
+        @apply flex justify-center items-center
+    }
+    .card-action-btn {
+
+        @apply text-2xl mt-7 py-2 min-w-full border border-amber-700 m-2 rounded-xl bg-amber-600/65
+    }
+    .card-action-btn:hover{
+        @apply bg-amber-500/65 transition-all duration-75
+    }
+}
