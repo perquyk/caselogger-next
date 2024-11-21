@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg {
+        @apply bg-gradient-to-b from-slate-700/90 to-slate-700
+    }
+    .navbar {
+        @apply bg flex justify-between items-center text-neutral-200 min-h-12 shadow-md shadow-gray-900/75
+    }
+
+    .nav-group {
+        @apply mx-5
+    }
+
+    .nav-brand {
+        @apply flex flex-wrap gap-3 items-center text-xl text-neutral-200
+    }
+    .nav-brand:hover {
+        @apply text-white transition-all
+    }
+
+    .nav-item-group {
+        @apply flex flex-wrap items-center
+    }
+
+    .nav-item {
+        @apply text-neutral-200 px-4 py-3
+    }
+    .nav-item:hover {
+        @apply text-white border-orange-400 border-b-2 py-2 cursor-pointer transition-all duration-75
+    }
+
+    /*Dropdown styling*/
+    .dropdown .dd-label {
+        @apply flex items-center px-4 py-3 text-neutral-200
+    }
+    .dropdown:hover .dd-label {
+        @apply text-white border-orange-400 border-b-2 py-2 cursor-pointer transition-all duration-75
+    }
+
+    .dropdown-content {
+        display: none;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        position: absolute;
+        align-content: center;
+        @apply bg-slate-900 min-w-32 border border-slate-950
+
+    }
+    .dd-chevron {
+        @apply rotate-180 scale-50
+    }
+    .dropdown-content a{
+        @apply text-neutral-300 px-3 py-5 block
+    }
+    .dropdown-content a:hover{
+       @apply opacity-100 text-neutral-100 border-l-2 border-orange-400/90
+    }
+    .dropdown:hover .dropdown-content {
+        @apply block
+    }
+    .dropdown:hover .dd-chevron{
+        @apply text-white
+    }
+    .dropdown:hover .ddlabel {
+        @apply text-white
+    }
+
+}
