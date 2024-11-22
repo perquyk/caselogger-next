@@ -3,32 +3,40 @@
 @tailwind utilities;
 
 @layer components {
-    .card-header{
-        @apply flex items-end justify-between gap-7
+    .cards {
+        @apply flex items-center justify-center mt-3 max-w-full;
     }
+    .card-wrapper{
+        min-width: 80rem;
+        @apply grid grid-cols-12 gap-3;
+    }
+    .card-frame{
+        @apply col-span-4;
+        @apply flex flex-col justify-between;
+        @apply min-w-full max-w-full;
+        @apply text-neutral-300 bg-slate-700 rounded-lg p-4;
+        @apply shadow-md shadow-gray-900/75 z-10;
+    }
+    .card-header{
+        @apply flex items-center justify-between mt-3;
+    }
+
     .card-version{
         @apply text-neutral-300/50 text-sm
     }
-    .card-frame{
-
-        @apply text-neutral-300 bg-slate-700 rounded-lg p-4 max-w-full
-
-    }
     .by{
-        @apply pb-3
+        @apply pb-3 text-neutral-300/50 text-sm mb-5;
     }
-    .card-wrapper{
-        @apply max-w-7xl grid grid-cols-3 gap-3
+    .card-body{
+        @apply flex flex-col justify-between;
     }
-    .cards {
-        @apply flex items-center justify-center mt-3
-    }
+
     .card-action-div{
-        @apply flex justify-center items-center
+
     }
     .card-action-btn {
 
-        @apply text-2xl mt-7 py-2 min-w-full border border-amber-700 m-2 rounded-xl bg-amber-600/65
+        @apply text-2xl mt-0 py-2 min-w-full m-2 rounded-xl bg-amber-600/65
     }
     .card-action-btn:hover{
         @apply bg-amber-500/65 transition-all duration-75
