@@ -7,7 +7,7 @@
         @apply bg-gradient-to-b from-slate-700/90 to-slate-700
     }
     .navbar {
-        @apply sticky z-10 bg flex justify-between items-center text-neutral-200 min-h-12 shadow-md shadow-gray-900/75
+        @apply sticky z-40 bg flex justify-between items-center text-neutral-200 min-h-12 shadow-md shadow-gray-900/75
     }
     .nav-group {
         @apply mx-5
@@ -51,7 +51,7 @@
        @apply opacity-100 text-neutral-100 border-l-4 border-orange-400/90
     }
     .dropdown:hover .dropdown-content {
-        @apply block z-20
+        @apply block z-50
     }
     .dropdown:hover .dd-chevron{
         scale: 1 -1;
